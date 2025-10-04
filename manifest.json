@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Kiosk Camera Button",
+  "version": "1.0",
+  "description": "Adds a persistent camera button to launch Kamoso",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["button-style.css"],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

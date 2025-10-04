@@ -1,0 +1,41 @@
+#kiosk-camera-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2147483647; /* Maximum z-index value */
+  
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  
+  background: #4285f4;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+#kiosk-camera-button:hover {
+  background: #357ae8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+#kiosk-camera-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+#kiosk-camera-button svg {
+  width: 24px;
+  height: 24px;
+}
